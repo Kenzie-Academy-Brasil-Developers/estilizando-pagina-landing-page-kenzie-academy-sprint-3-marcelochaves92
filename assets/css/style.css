@@ -1,0 +1,82 @@
+body{
+    font-family: 'Lato',sans-serif;
+}
+
+header{
+    background-color:#00043e;
+    width: 100%;
+    height: 500px;
+}
+
+h2{
+    font-family: 'Montserrat',sans-serif;
+}
+
+.large-container img{
+    float:left;
+    width: 90px;
+    height: 90px;
+}
+nav li{
+    font-size: 13px;
+}
+.secaoDestaque {
+    margin: 0 auto;
+    align-items: center;
+}
+
+.secaoDestaque h2{
+    font-size: 63px;
+}
+
+.secaoDestaque p{
+    font-size: 21px;
+}
+
+.secaoDestaqueFormulario button{
+    font-size: 14px;
+}
+
+.secaoSobre{
+
+}
+
+.secaoSobre h2{
+    font-size: 24px;
+}
+
+.secaoSobre p,span{
+    font-size: 19px;
+}
+
+.secaoCursos{
+
+}
+
+.secaoCursos h3{
+    font-size: 19px;
+}
+
+.secaoCursos p{
+    font-size: 15px;
+}
+
+.secaoCalendar{
+
+}
+
+.calendario-data{
+    font-size: 36px;
+}
+
+.secaoCalendar h3{
+    font-size: 19px;
+}
+
+.secaoCalendar p{
+    font-size: 15px;
+}
+
+.secaoCalendar button{
+    font-size: 32px;
+}
