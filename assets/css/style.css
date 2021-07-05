@@ -1,0 +1,171 @@
+:root{     
+    --branco: #FFFFFF;
+    --azul-claro: #007aff;
+    --azul-escuro: #00043e;
+    --cinza: #303030;
+    --cinza-claro: #818181;
+}
+
+
+@media (max-width: 1080px) {
+    html {
+      font-size: 93.75%; /*15px*/
+    }
+  }
+  
+
+@media (max-width: 720px) {
+    html {
+      font-size: 87.5%; /*14px*/
+    }
+  }
+
+
+
+
+.topo{
+    background-color: var(--azul-escuro);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60%;
+}
+
+.topo .large-container{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 90%;
+    align-items: flex-start;
+    padding-top: 1.5rem;
+
+}
+
+.secaoDestaque .secaoDestaqueFormulario{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    height: 2.75rem;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.secaoDestaque .secaoDestaqueFormulario input{
+    border: 0;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    width: 70%;
+    padding-left: 12px;
+}
+
+.secaoDestaque .secaoDestaqueFormulario button{
+    border:0;
+    background-color: var(--azul-claro);
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    color: var(--branco);
+    width: 30%;
+    font-size: 1rem;
+}
+
+figcaption{
+    display: none;
+}
+
+body{
+    font-family: 'Lato',sans-serif;
+    align-items: center;
+}
+
+
+nav{
+    display: none;
+}
+
+h2{
+    font-family: 'Montserrat',sans-serif;
+}
+
+.flex-col img{
+    margin: 0 auto;
+    height: 180px;
+    width: 180px;
+    object-fit: cover;
+}
+
+.large-container img{
+    width: 90px;
+    height: 90px;
+}
+
+nav li{
+    font-size: 13px;
+}
+
+.secaoDestaque {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 92%;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.secaoDestaque h2{
+    margin: 1rem auto;
+    color: var(--branco);
+    font-size: 2.50rem;
+}
+
+.secaoDestaque p{
+    margin-bottom: 1rem;
+    font-size: 1.75rem;
+    color: var(--branco);
+}
+
+.secaoDestaqueFormulario button{
+    font-size: 0.75rem;
+}
+
+.inicial{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inicial .content{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-col img{
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+}
+
+#title{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.flex-col figure{
+    display: flex;
+    height: 100px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.secaoCursos p{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
