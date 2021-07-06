@@ -1,80 +1,184 @@
-img {
-  width: 321px;
+:root{     
+    --branco: #FFFFFF;
+    --azul-claro: #007aff;
+    --azul-escuro: #00043e;
+    --cinza: #303030;
+    --cinza-claro: #818181;
 }
 
-body {
-  font-family: "Lato", sans-serif;
+@media (max-width: 1080px) {
+    html {
+      font-size: 93.75%; /*15px*/
+    }
+ } 
+
+@media (max-width: 720px) {
+    html {
+      font-size: 87.5%; /*14px*/
+    }
+ }
+
+.topo{
+    background-color: var(--azul-escuro);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60%;
 }
 
-header {
-  background-color: #00043e;
-  width: 100%;
-  height: 110px;
-  margin-top: 30px;
+.topo .large-container{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 90%;
+    align-items: flex-start;
+    padding-top: 1.5rem;
 }
 
-nav {
-  display: none;
+.secaoDestaque .secaoDestaqueFormulario{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    height: 2.75rem;
+    justify-content: center;
+    margin-bottom: 50px;
 }
 
-h2 {
-  font-family: "Montserrat", sans-serif;
+.secaoDestaque .secaoDestaqueFormulario input{
+    border: 0;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    width: 70%;
+    padding-left: 12px;
 }
 
-.large-container img {
-  float: left;
-  width: 90px;
-  height: 90px;
+.secaoDestaque .secaoDestaqueFormulario button{
+    border:0;
+    background-color: var(--azul-claro);
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    color: var(--branco);
+    width: 30%;
+    font-size: 1rem;
 }
-nav li {
-  font-size: 13px;
+
+figcaption{
+    display: none;
+}
+
+body{
+    font-family: 'Lato',sans-serif;
+    align-items: center;
+}
+
+
+nav{
+    display: none;
+}
+
+h2{
+    font-family: 'Montserrat',sans-serif;
+}
+
+.flex-col img{
+    margin: 0 auto;
+    height: 180px;
+    width: 180px;
+    object-fit: cover;
+}
+
+.large-container img{
+    width: 90px;
+    height: 90px;
+}
+
+nav li{
+    font-size: 13px;
 }
 
 .secaoDestaque {
-  display: flex;
-  flex-flow: column wrap;
-  text-align: center;
-  background-color: #00043e;
-  padding: 0 0 170px 0;
-  margin: 0 auto;
-  width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 92%;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
 }
 
-.secaoDestaque h2 {
-  font-size: 63px;
-  color: #ffffff;
+.secaoDestaque h2{
+    margin: 1rem auto;
+    color: var(--branco);
+    font-size: 2.50rem;
 }
 
-.secaoDestaque p {
-  font-size: 21px;
-  color: #ffffff;
-  margin: 30px auto;
+.secaoDestaque p{
+    margin-bottom: 1rem;
+    font-size: 1.75rem;
+    color: var(--branco);
 }
 
-.secaoDestaqueFormulario {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
+.secaoDestaqueFormulario button{
+    font-size: 0.75rem;
 }
 
-.secaoDestaqueFormulario button {
-  font-size: 14px;
-  background-color: #007aff;
-  border-style: none;
-  padding: 12px 5px;
-  color: #ffffff;
-  width: 100px;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
+.inicial{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.secaoDestaqueFormulario input {
-  background-color: #ffffff;
-  border-style: none;
-  padding: 12px 5px;
-  width: 200px;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
+.inicial .content{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-col img{
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+}
+
+#title{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.flex-col figure{
+    display: flex;
+    height: 100px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.secaoCursos p{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-col p{
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.flex-col button{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-col span{
+    margin-bottom: 30px;
 }
 
 .secaoSobre {
@@ -89,8 +193,6 @@ nav li {
 span {
   font-size: 19px;
 }
-
-/* CURSOS - INTI */
 
 .secaoCursos {
   margin-top: 200px;
@@ -142,9 +244,6 @@ li img {
   margin-bottom: 25px;
 }
 
-/* FIM - CURSOS */
-
-/* CALENDARIO - INTI */
 .secaoCalendar {
   margin-top: 100px;
   display: flex;
@@ -231,5 +330,3 @@ li img {
 .secaoCalendar p {
   font-size: 15px;
 }
-
-/* FIM - CALENDARIO */
