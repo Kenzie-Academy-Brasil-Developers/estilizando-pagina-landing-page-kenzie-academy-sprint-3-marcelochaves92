@@ -1,0 +1,164 @@
+img {
+  width: 320px;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+header {
+  background-color: #00043e;
+  width: 100%;
+  height: 110px;
+  margin-top: 30px;
+}
+
+nav {
+  display: none;
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+}
+
+.large-container img {
+  float: left;
+  width: 90px;
+  height: 90px;
+}
+nav li {
+  font-size: 13px;
+}
+
+.secaoDestaque {
+  display: flex;
+  flex-flow: column wrap;
+  text-align: center;
+  background-color: #00043e;
+  padding: 0 0 170px 0;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.secaoDestaque h2 {
+  font-size: 63px;
+  color: #ffffff;
+}
+
+.secaoDestaque p {
+  font-size: 21px;
+  color: #ffffff;
+  margin: 30px auto;
+}
+
+.secaoDestaqueFormulario {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+
+.secaoDestaqueFormulario button {
+  font-size: 14px;
+  background-color: #007aff;
+  border-style: none;
+  padding: 12px 5px;
+  color: #ffffff;
+  width: 100px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.secaoDestaqueFormulario input {
+  background-color: #ffffff;
+  border-style: none;
+  padding: 12px 5px;
+  width: 200px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.secaoSobre {
+  margin-top: 200px;
+}
+
+.secaoSobre h2 {
+  font-size: 24px;
+}
+
+.secaoSobre p,
+span {
+  font-size: 19px;
+}
+
+/* CURSOS - INTI */
+
+.secaoCursos {
+  margin-top: 200px;
+}
+
+.secaoCursos__container {
+  display: flex;
+  flex-flow: column wrap;
+  text-align: center;
+}
+
+.secaoCursos h2 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-bottom: 40px;
+}
+
+.secaoCursos p {
+  margin-bottom: 80px;
+}
+
+li img {
+  width: 50%;
+  max-width: 150px;
+}
+
+.secaoCursos h3 {
+  font-size: 19px;
+}
+
+.secaoCursos p {
+  font-size: 15px;
+}
+
+.listaCursos {
+  display: flex;
+  flex-flow: column wrap;
+  text-align: center;
+  align-items: center;
+}
+
+.listaCursos h3 {
+  margin: 10px 0 30px 0;
+}
+
+.listaCursos p {
+  color: #818181;
+  line-height: 2;
+  margin-bottom: 25px;
+}
+
+/* FIM - CURSOS */
+
+.secaoCalendar {
+}
+
+.calendario-data {
+  font-size: 36px;
+}
+
+.secaoCalendar h3 {
+  font-size: 19px;
+}
+
+.secaoCalendar p {
+  font-size: 15px;
+}
+
+.secaoCalendar button {
+  font-size: 32px;
+}
