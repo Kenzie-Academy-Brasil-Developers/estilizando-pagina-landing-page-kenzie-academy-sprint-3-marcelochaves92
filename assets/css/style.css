@@ -19,10 +19,7 @@
       font-size: 87.5%; /*14px*/
     }
   }
-
-
-
-
+/* Marcelo Chaves */
 .topo{
     background-color: var(--azul-escuro);
     display: flex;
@@ -95,8 +92,13 @@ h2{
 }
 
 .large-container img{
-    width: 90px;
-    height: 90px;
+    width: 84px;
+    height: 84px;
+}
+
+.large-container .botao-menu img{
+    width: 34px;
+    height: 34px;
 }
 
 nav li{
@@ -181,8 +183,54 @@ nav li{
     margin: 0 auto;
     justify-content: center;
     align-items: center;
+    border: 1px solid var(--cinza-claro);
+    border-radius: 4px;
+    padding: 5px;
+    width: 40%;
+    background-color: var(--branco);
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .flex-col span{
     margin-bottom: 30px;
+}
+
+.fundo-cinza{
+    background-color: var(--cinza-claro);
+}
+
+.secaoContato .secaoContato-informacoes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.secaoContato .secaoContato-informacoes img{
+    width: 20px;
+    height: 20px;
+}
+
+.secaoContato .secaoContato-informacoes figure{
+    margin: 0;
+}
+
+.flex-col .form-input-model label{
+    display: none;
+}
+
+.flex-col h2 {
+    display: none;
+}
+
+.flex-col input{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+footer {
+    display: none;
 }
