@@ -144,21 +144,92 @@ li img {
 
 /* FIM - CURSOS */
 
+/* CALENDARIO - INTI */
 .secaoCalendar {
+  margin-top: 100px;
+  display: flex;
+  flex-flow: column wrap;
+  text-align: center;
+}
+
+.secaoCalendar h2 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-bottom: 35px;
+}
+
+.secaoCalendar p {
+  margin-bottom: 50px;
+}
+
+.calendario {
+  display: flex;
+  flex-flow: column wrap;
+  text-align: center;
+}
+
+.calendario__alinhamento {
+  display: flex;
+  flex-flow: column wrap;
+  text-align: center;
+  border: 1px solid black;
+  margin: 0 auto 80px auto;
+  width: 90%;
+  max-width: 300px;
+}
+
+.calendario-textoCentral {
+  height: 393px;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.calendario-textoCentral p {
+  color: #818181;
+  line-height: 2;
+  margin: 0 12.5%;
 }
 
 .calendario-data {
   font-size: 36px;
+  background-color: #00043e;
+  width: 100%;
+  padding: 50px 0 45px 0;
+  color: #ffffff;
 }
 
-.secaoCalendar h3 {
+.calendario-data-rodape {
+  height: 161px;
+  color: #818181;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.calendario-data-rodape span {
+  font-size: 32px;
+}
+
+.calendario-data-rodape button {
   font-size: 19px;
+  background-color: #007aff;
+  color: #ffffff;
+  width: 85%;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid transparent;
+  margin: 15px 0 15px 0;
+}
+.secaoCalendar h3 {
+  font-size: 23px;
+  padding: 20px auto 40px auto;
 }
 
 .secaoCalendar p {
   font-size: 15px;
 }
 
-.secaoCalendar button {
-  font-size: 32px;
-}
+/* FIM - CALENDARIO */
