@@ -1,198 +1,248 @@
-:root{     
-    --branco: #FFFFFF;
-    --azul-claro: #007aff;
-    --azul-escuro: #00043e;
-    --cinza: #303030;
-    --cinza-claro: #818181;
+/* MARCELO - INICIO */
+
+:root {
+  --branco: #ffffff;
+  --azul-claro: #007aff;
+  --azul-escuro: #00043e;
+  --cinza: #303030;
+  --cinza-claro: #818181;
 }
 
 @media (max-width: 1080px) {
-    html {
-      font-size: 93.75%; /*15px*/
-    }
- } 
+  html {
+    font-size: 93.75%; /*15px*/
+  }
+}
 
 @media (max-width: 720px) {
-    html {
-      font-size: 87.5%; /*14px*/
-    }
- }
-
-.topo{
-    background-color: var(--azul-escuro);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 60%;
+  html {
+    font-size: 87.5%; /*14px*/
+  }
+}
+/* Marcelo Chaves */
+.topo {
+  background-color: var(--azul-escuro);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 60%;
 }
 
-.topo .large-container{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    width: 90%;
-    align-items: flex-start;
-    padding-top: 1.5rem;
+.topo .large-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 90%;
+  align-items: flex-start;
+  padding-top: 1.5rem;
 }
 
-.secaoDestaque .secaoDestaqueFormulario{
-    display: flex;
-    flex-direction: row;
-    width: 90%;
-    height: 2.75rem;
-    justify-content: center;
-    margin-bottom: 50px;
+.secaoDestaque .secaoDestaqueFormulario {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  height: 2.75rem;
+  justify-content: center;
+  margin-bottom: 50px;
 }
 
-.secaoDestaque .secaoDestaqueFormulario input{
-    border: 0;
-    border-top-left-radius: 4px;
-    border-bottom-left-radius: 4px;
-    width: 70%;
-    padding-left: 12px;
+.secaoDestaque .secaoDestaqueFormulario input {
+  border: 0;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  width: 70%;
+  padding-left: 12px;
 }
 
-.secaoDestaque .secaoDestaqueFormulario button{
-    border:0;
-    background-color: var(--azul-claro);
-    border-top-right-radius: 4px;
-    border-bottom-right-radius: 4px;
-    color: var(--branco);
-    width: 30%;
-    font-size: 1rem;
+.secaoDestaque .secaoDestaqueFormulario button {
+  border: 0;
+  background-color: var(--azul-claro);
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  color: var(--branco);
+  width: 30%;
+  font-size: 1rem;
 }
 
-figcaption{
-    display: none;
+figcaption {
+  display: none;
 }
 
-body{
-    font-family: 'Lato',sans-serif;
-    align-items: center;
+body {
+  font-family: "Lato", sans-serif;
+  align-items: center;
 }
 
-
-nav{
-    display: none;
+nav {
+  display: none;
 }
 
-h2{
-    font-family: 'Montserrat',sans-serif;
+h2 {
+  font-family: "Montserrat", sans-serif;
 }
 
-.flex-col img{
-    margin: 0 auto;
-    height: 180px;
-    width: 180px;
-    object-fit: cover;
+.flex-col img {
+  margin: 0 auto;
+  height: 180px;
+  width: 180px;
+  object-fit: cover;
 }
 
-.large-container img{
-    width: 90px;
-    height: 90px;
+.large-container img {
+  width: 84px;
+  height: 84px;
 }
 
-nav li{
-    font-size: 13px;
+.large-container .botao-menu img {
+  width: 34px;
+  height: 34px;
+}
+
+nav li {
+  font-size: 13px;
 }
 
 .secaoDestaque {
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    width: 92%;
-    align-items: center;
-    justify-content: space-around;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 92%;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
 }
 
-.secaoDestaque h2{
-    margin: 1rem auto;
-    color: var(--branco);
-    font-size: 2.50rem;
+.secaoDestaque h2 {
+  margin: 1rem auto;
+  color: var(--branco);
+  font-size: 2.5rem;
 }
 
-.secaoDestaque p{
-    margin-bottom: 1rem;
-    font-size: 1.75rem;
-    color: var(--branco);
+.secaoDestaque p {
+  margin-bottom: 1rem;
+  font-size: 1.75rem;
+  color: var(--branco);
 }
 
-.secaoDestaqueFormulario button{
-    font-size: 0.75rem;
+.secaoDestaqueFormulario button {
+  font-size: 0.75rem;
 }
 
-.inicial{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.inicial {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.inicial .content{
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+.inicial .content {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.flex-col img{
-    height: 100px;
-    width: 100px;
-    object-fit: cover;
+.flex-col img {
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
 }
 
-#title{
-    margin-top: 50px;
-    margin-bottom: 50px;
+#title {
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
-.flex-col figure{
-    display: flex;
-    height: 100px;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
+.flex-col figure {
+  display: flex;
+  height: 100px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
 }
 
-.secaoCursos p{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.secaoCursos p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.flex-col p{
-    margin-bottom: 30px;
-    margin-top: 30px;
+.flex-col p {
+  margin-bottom: 30px;
+  margin-top: 30px;
 }
 
-.flex-col button{
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    justify-content: center;
-    align-items: center;
+.flex-col button {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--cinza-claro);
+  border-radius: 4px;
+  padding: 5px;
+  width: 40%;
+  background-color: var(--branco);
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
-.flex-col span{
-    margin-bottom: 30px;
+.flex-col span {
+  margin-bottom: 30px;
 }
 
-.secaoSobre {
-  margin-top: 200px;
+.fundo-cinza {
+  background-color: var(--cinza-claro);
 }
 
-.secaoSobre h2 {
-  font-size: 24px;
+.secaoContato .secaoContato-informacoes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
 }
 
-.secaoSobre p,
-span {
-  font-size: 19px;
+.secaoContato .secaoContato-informacoes img {
+  width: 20px;
+  height: 20px;
 }
+
+.secaoContato .secaoContato-informacoes figure {
+  margin: 0;
+}
+
+.flex-col .form-input-model label {
+  display: none;
+}
+
+.flex-col h2 {
+  display: none;
+}
+
+.flex-col input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+footer {
+  display: none;
+}
+
+/* MARCELO - FIM */
+/* 
+*
+*
+*
+*
+*
+*
+ */
+/* INTI - INICIO */
 
 .secaoCursos {
   margin-top: 200px;
@@ -239,7 +289,7 @@ li img {
 }
 
 .listaCursos p {
-  color: #818181;
+  color: var(--cinza-claro);
   line-height: 2;
   margin-bottom: 25px;
 }
@@ -286,7 +336,7 @@ li img {
 }
 
 .calendario-textoCentral p {
-  color: #818181;
+  color: var(--cinza-claro);
   line-height: 2;
   margin: 0 12.5%;
 }
@@ -296,16 +346,17 @@ li img {
   background-color: #00043e;
   width: 100%;
   padding: 50px 0 45px 0;
-  color: #ffffff;
+  color: var(--branco);
 }
 
 .calendario-data-rodape {
   height: 161px;
-  color: #818181;
+  color: var(--cinza-claro);
   display: flex;
   flex-flow: column wrap;
   align-items: center;
   justify-content: space-evenly;
+  /* border-top: 3px solid var(--cinza-claro); */
 }
 
 .calendario-data-rodape span {
@@ -314,8 +365,8 @@ li img {
 
 .calendario-data-rodape button {
   font-size: 19px;
-  background-color: #007aff;
-  color: #ffffff;
+  background-color: var(--azul-claro);
+  color: var(--branco);
   width: 85%;
   padding: 12px;
   border-radius: 6px;
@@ -330,3 +381,5 @@ li img {
 .secaoCalendar p {
   font-size: 15px;
 }
+
+/* INTI - FIM */
