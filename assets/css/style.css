@@ -264,13 +264,15 @@ nav li{
 }
 
 .secaoContato .flex-col h2 {
-    display: none;
+    display: flex;
+    align-items: center;
 }
 
 .flex-col .form-input-model .submit {
+    display: flex;
+    flex-direction: column;
     align-items: flex-end;
 }
-
 
 footer {
     display: none;
