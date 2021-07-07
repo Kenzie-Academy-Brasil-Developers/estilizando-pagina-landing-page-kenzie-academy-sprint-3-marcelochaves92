@@ -221,6 +221,11 @@ nav li{
     align-items:flex-start;
 }
 
+.secaoContato .secaoContato-informacoes ul {
+    display: flex;
+    flex-direction: column;
+}
+
 .secaoContato .secaoContato-informacoes ul img{
     display: flex;
     flex-direction: column;
@@ -231,7 +236,7 @@ nav li{
 
 .secaoContato .secaoContato-informacoes a {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 .secaoContato .flex-col .form-input-model{
