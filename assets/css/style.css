@@ -16,7 +16,9 @@
     html {
       font-size: 87.5%; /*14px*/
     }
- }
+
+  }
+/* Marcelo Chaves */
 
 .topo{
     background-color: var(--azul-escuro);
@@ -81,16 +83,21 @@ h2{
     font-family: 'Montserrat',sans-serif;
 }
 
-.flex-col img{
+.secaoSobre .flex-col img{
     margin: 0 auto;
-    height: 180px;
-    width: 180px;
+    height: 140px;
+    width: 140px;
     object-fit: cover;
 }
 
 .large-container img{
-    width: 90px;
-    height: 90px;
+    width: 84px;
+    height: 84px;
+}
+
+.large-container .botao-menu img{
+    width: 34px;
+    height: 34px;
 }
 
 nav li{
@@ -138,6 +145,14 @@ nav li{
     align-items: center;
 }
 
+.secaoSobre .flex-col {
+    width: 300px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
 .flex-col img{
     height: 100px;
     width: 100px;
@@ -151,10 +166,26 @@ nav li{
 
 .flex-col figure{
     display: flex;
-    height: 100px;
+    height: 100%;
     width: 100%;
     justify-content: center;
     align-items: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.secaoSobre .flex-col ul{
+    display: flex;
+    margin: 0px auto;
+    flex-direction: column;
+    justify-content: center;
+    list-style: disc;
+    width: 62%;
+    text-align: start;
+}
+
+.flex-col li{
+    margin-bottom: 10px;
 }
 
 .secaoCursos p{
@@ -169,164 +200,103 @@ nav li{
     margin-top: 30px;
 }
 
-.flex-col button{
+.secaoSobre .flex-col button{
     display: flex;
     flex-direction: column;
     margin: 0 auto;
     justify-content: center;
     align-items: center;
+    border: 1px solid var(--cinza-claro);
+    border-radius: 4px;
+    padding: 5px;
+    width: 50%;
+    background-color: var(--branco);
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .flex-col span{
     margin-bottom: 30px;
 }
 
-.secaoSobre {
-  margin-top: 200px;
+
+.secaoContato .secaoContato-informacoes {
+    display: flex;
+    width: 230px;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-start;
 }
 
-.secaoSobre h2 {
-  font-size: 24px;
+.secaoContato .secaoContato-informacoes p{
+    width: 220px;
 }
 
-.secaoSobre p,
-span {
-  font-size: 19px;
+.secaoContato .secaoContato-informacoes ul {
+    display: grid;
+    grid-template-columns: 15% 85%;
+    grid-template-rows: 1fr 1fr 1fr;
 }
 
-.secaoCursos {
-  margin-top: 200px;
+.secaoContato .secaoContato-informacoes ul img{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 20px;
+    height: 20px;
 }
 
-.secaoCursos__container {
-  display: flex;
-  flex-flow: column wrap;
-  text-align: center;
+.secaoContato .secaoContato-informacoes a {
+    display: flex;
+    flex-direction: column;
 }
 
-.secaoCursos h2 {
-  font-size: 1.5rem;
-  font-weight: 800;
-  margin-bottom: 40px;
+.secaoContato .flex-col .form-input-model{
+    width: 100%;
+    margin-bottom: 10px;
 }
 
-.secaoCursos p {
-  margin-bottom: 80px;
+.secaoContato .flex-col .form-input-model .mensagem{
+    width: 112%;
 }
 
-li img {
-  width: 50%;
-  max-width: 150px;
+.secaoContato .flex-col .form-input-model label{
+    display: none;
 }
 
-.secaoCursos h3 {
-  font-size: 19px;
+.flex-col h2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 30px;
 }
 
-.secaoCursos p {
-  font-size: 15px;
+.secaoContato .flex-col input{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
-.listaCursos {
-  display: flex;
-  flex-flow: column wrap;
-  text-align: center;
-  align-items: center;
+.secaoContato .flex-col h2 {
+    display: flex;
+    align-items: center;
 }
 
-.listaCursos h3 {
-  margin: 10px 0 30px 0;
+.flex-col .send{
+    width: 186px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
 }
 
-.listaCursos p {
-  color: #818181;
-  line-height: 2;
-  margin-bottom: 25px;
+.flex-col button.botao {
+    width: 30%;
+    margin-right: 30px;
 }
 
-.secaoCalendar {
-  margin-top: 100px;
-  display: flex;
-  flex-flow: column wrap;
-  text-align: center;
-}
-
-.secaoCalendar h2 {
-  font-size: 1.5rem;
-  font-weight: 800;
-  margin-bottom: 35px;
-}
-
-.secaoCalendar p {
-  margin-bottom: 50px;
-}
-
-.calendario {
-  display: flex;
-  flex-flow: column wrap;
-  text-align: center;
-}
-
-.calendario__alinhamento {
-  display: flex;
-  flex-flow: column wrap;
-  text-align: center;
-  border: 1px solid black;
-  margin: 0 auto 80px auto;
-  width: 90%;
-  max-width: 300px;
-}
-
-.calendario-textoCentral {
-  height: 393px;
-  display: flex;
-  flex-flow: column wrap;
-  align-items: center;
-  justify-content: space-evenly;
-}
-
-.calendario-textoCentral p {
-  color: #818181;
-  line-height: 2;
-  margin: 0 12.5%;
-}
-
-.calendario-data {
-  font-size: 36px;
-  background-color: #00043e;
-  width: 100%;
-  padding: 50px 0 45px 0;
-  color: #ffffff;
-}
-
-.calendario-data-rodape {
-  height: 161px;
-  color: #818181;
-  display: flex;
-  flex-flow: column wrap;
-  align-items: center;
-  justify-content: space-evenly;
-}
-
-.calendario-data-rodape span {
-  font-size: 32px;
-}
-
-.calendario-data-rodape button {
-  font-size: 19px;
-  background-color: #007aff;
-  color: #ffffff;
-  width: 85%;
-  padding: 12px;
-  border-radius: 6px;
-  border: 1px solid transparent;
-  margin: 15px 0 15px 0;
-}
-.secaoCalendar h3 {
-  font-size: 23px;
-  padding: 20px auto 40px auto;
-}
-
-.secaoCalendar p {
-  font-size: 15px;
+footer {
+    display: none;
 }
