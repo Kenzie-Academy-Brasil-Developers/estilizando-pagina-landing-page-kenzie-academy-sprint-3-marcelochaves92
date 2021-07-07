@@ -221,16 +221,17 @@ nav li{
     align-items:flex-start;
 }
 
-.secaoContato .secaoContato-informacoes img{
+.secaoContato .secaoContato-informacoes ul img{
+    display: flex;
+    flex-direction: column;
     align-items: flex-start;
     width: 20px;
     height: 20px;
 }
 
-.secaoContato .secaoContato-informacoes ul figure{
+.secaoContato .secaoContato-informacoes a {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row;
 }
 
 .secaoContato .flex-col .form-input-model{
@@ -261,8 +262,11 @@ nav li{
     display: none;
 }
 
-footer {
-    display: none;
+.flex-col .form-input-model .submit {
+    align-items: flex-end;
 }
 
 
+footer {
+    display: none;
+}
