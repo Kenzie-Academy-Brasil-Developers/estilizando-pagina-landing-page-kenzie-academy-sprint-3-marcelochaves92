@@ -510,9 +510,14 @@ li img {
 @media only screen and (min-width: 720px) {
     .topo .large-container nav {
         display: flex;
-        flex-direction: column;
-        justify-content:space-between;
+        flex-direction: row;
+        justify-items: space-between;
     }
+   
+    .topo .large-container nav ul li a{
+      flex-direction: row;
+      color: var(--branco);
+  }
 
     .topo .large-container .botao-menu {
         display:none;
