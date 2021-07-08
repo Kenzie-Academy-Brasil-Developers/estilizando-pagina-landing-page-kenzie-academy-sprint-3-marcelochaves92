@@ -508,9 +508,9 @@ li img {
 }
 
 @media only screen and (min-width: 720px) {
-    .topo .large-container nav ul{
+    .topo .large-container nav {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content:space-between;
     }
 
