@@ -6,8 +6,6 @@
   --cinza-claro: #818181;
 }
 
-
-
 .topo {
   background-color: var(--azul-escuro);
   display: flex;
@@ -68,6 +66,13 @@ nav {
 
 h2 {
   font-family: "Montserrat", sans-serif;
+}
+
+.flex-col h2 {
+  font-family: "Montserrat", sans-serif;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-weight: 700;
 }
 
 .secaoSobre .flex-col img {
@@ -144,11 +149,6 @@ nav li {
   height: 100px;
   width: 100px;
   object-fit: cover;
-}
-
-#title {
-  margin-top: 50px;
-  margin-bottom: 50px;
 }
 
 .flex-col figure {
@@ -268,6 +268,7 @@ nav li {
   font-size: 2rem;
   font-weight: 700;
   color: var(--cinza);
+  font-family: "Montserrat" sans-serif;
 }
 
 .secaoContato .flex-col input {
@@ -312,12 +313,19 @@ footer {
 
 .secaoCursos h2 {
   font-size: 1.5rem;
-  font-weight: 800;
+  font-weight: 700;
   margin-bottom: 40px;
+  font-family: "Montserrat", sans-serif;
 }
 
-.secaoCursos p {
+.secaoCursos__container p {
+  font-size: 19px;
   margin-bottom: 80px;
+}
+
+.secaoCursos .test p {
+  margin-bottom: 80px;
+  font-size: 15px;
 }
 
 li img {
@@ -327,10 +335,6 @@ li img {
 
 .secaoCursos h3 {
   font-size: 19px;
-}
-
-.secaoCursos p {
-  font-size: 15px;
 }
 
 .listaCursos {
@@ -358,13 +362,15 @@ li img {
 }
 
 .secaoCalendar h2 {
+  font-family: "Montserrat", sans-serif;
   font-size: 1.5rem;
-  font-weight: 800;
+  font-weight: 700;
   margin-bottom: 35px;
 }
 
 .secaoCalendar p {
   margin-bottom: 50px;
+  font-size: 19px;
 }
 
 .calendario {
@@ -391,10 +397,11 @@ li img {
   justify-content: space-evenly;
 }
 
-.calendario-textoCentral p {
+.secaoCalendar .calendario-textoCentral p {
   color: var(--cinza-claro);
   line-height: 2;
   margin: 0 12.5%;
+  font-size: 15px;
 }
 
 .calendario-data {
@@ -412,7 +419,7 @@ li img {
   flex-flow: column wrap;
   align-items: center;
   justify-content: space-evenly;
-  /* border-top: 3px solid var(--cinza-claro); */
+  border-top: 1px solid #b6b3b3;
 }
 
 .calendario-data-rodape span {
@@ -432,13 +439,12 @@ li img {
 .secaoCalendar h3 {
   font-size: 23px;
   padding: 20px auto 40px auto;
-}
 
 .secaoCalendar p {
   font-size: 15px;
 }
 
-@media screen and (min-width: 1080px) {
+@media screen and (min-width: 1024px) {
   .secaoCursos {
     margin-top: 80px;
     color: var(--cinza);
@@ -505,6 +511,38 @@ li img {
     color: var(--cinza-claro);
     margin-bottom: 50px;
   }
+
+  .calendario-data-rodape button:hover {
+    color: black;
+    background-color: yellow;
+    transition: 0.75s;
+  }
+
+  .send button:hover {
+    color: var(--branco);
+    background-color: red;
+    padding: 12px 18px;
+    transition: 0.5s;
+    margin-bottom: -12px;
+    margin-top: 14px;
+  }
+}
+
+@media only screen and (min-width: 720px) {
+  .topo .large-container nav {
+    display: flex;
+    flex-direction: row;
+    justify-items: space-between;
+  }
+
+  .topo .large-container nav ul li a {
+    flex-direction: row;
+    color: var(--branco);
+  }
+
+  .topo .large-container .botao-menu {
+    display: none;
+  }
 }
 
 @media only screen and (min-width: 720px) {
@@ -518,4 +556,4 @@ li img {
         display:none;
     }
 
- }  
+ }
