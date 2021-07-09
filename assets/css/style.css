@@ -439,6 +439,9 @@ li img {
 .secaoCalendar h3 {
   font-size: 23px;
   padding: 20px auto 40px auto;
+
+.secaoCalendar p {
+  font-size: 15px;
 }
 
 @media screen and (min-width: 1024px) {
@@ -541,3 +544,16 @@ li img {
     display: none;
   }
 }
+
+@media only screen and (min-width: 720px) {
+    .topo .large-container nav ul{
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+    }
+
+    .topo .large-container .botao-menu {
+        display:none;
+    }
+
+ }
