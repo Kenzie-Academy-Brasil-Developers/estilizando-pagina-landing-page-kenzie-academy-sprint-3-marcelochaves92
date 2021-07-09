@@ -442,27 +442,55 @@ li img {
   font-size: 15px;
 }
 
-@media screen and (min-width: 1080px) {
-
-  .topo .large-container nav {
-      display: inline-block;
+@media screen and (min-width: 720px) {
+  
+  .topo .large-container nav{
+    display: block;
   }
- 
+
+
+  .topo .large-container nav ul {
+    display: flex;
+    width: 260px;
+    justify-content: space-between;
+  }
+  
+
   .topo .large-container nav ul li a{
     flex-direction: row;
     color: var(--branco);
     text-decoration: none;
-}
+  }
 
   .topo .large-container .botao-menu {
       display:none;
   }
 
+  .inicial .secaoSobre .flex-col h2{
+    text-align: left;
+  }
+  
   .inicial .secaoSobre .flex-col p{
+    text-align: left;
     width: 448px;
   }
-  .secaoSobre .flex-col button{
-    width: 30%;
+
+  .inicial .content .secaoSobre .flex .flex-col span{
+    display: block;
+    width: 610px;
+    text-align: left;
+  }
+
+  .inicial .content .secaoSobre .flex-col button{
+    padding: 10px 42px;
+    width: 24%;
+  }
+
+  .inicial .content .secaoSobre .flex-col h2{
+  }
+
+  .inicial .content .secaoSobre .flex-col ul li{
+    list-style: disc;
   }
 
   .secaoCursos {
