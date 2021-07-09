@@ -6,19 +6,6 @@
   --cinza-claro: #818181;
 }
 
-@media (max-width: 1080px) {
-  html {
-    font-size: 93.75%; /*15px*/
-  }
-}
-
-@media (max-width: 720px) {
-  html {
-    font-size: 87.5%; /*14px*/
-  }
-}
-/* Marcelo Chaves */
-
 .topo {
   background-color: var(--azul-escuro);
   display: flex;
@@ -295,14 +282,12 @@ nav li {
 }
 
 .flex-col .send {
-  /* width: 186px; */
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
 }
 
 .flex-col button.botao {
-  /* width: 30%; */
   margin-right: 35px;
   margin-top: 10px;
   color: var(--cinza);
@@ -315,20 +300,6 @@ nav li {
 footer {
   display: none;
 }
-
-/* 
-*
-*
-*
-*
-*
-*
-*
-*
-*
-*
-*
-/* INTI - INICIO */
 
 .secaoCursos {
   margin-top: 200px;
@@ -470,7 +441,7 @@ li img {
   padding: 20px auto 40px auto;
 }
 
-@media screen and (min-width: 1080px) {
+@media screen and (min-width: 1024px) {
   .secaoCursos {
     margin-top: 80px;
     color: var(--cinza);
@@ -537,5 +508,36 @@ li img {
     color: var(--cinza-claro);
     margin-bottom: 50px;
   }
+
+  .calendario-data-rodape button:hover {
+    color: black;
+    background-color: yellow;
+    transition: 0.75s;
+  }
+
+  .send button:hover {
+    color: var(--branco);
+    background-color: red;
+    padding: 12px 18px;
+    transition: 0.5s;
+    margin-bottom: -12px;
+    margin-top: 14px;
+  }
 }
-/* INTI - FIM */
+
+@media only screen and (min-width: 720px) {
+  .topo .large-container nav {
+    display: flex;
+    flex-direction: row;
+    justify-items: space-between;
+  }
+
+  .topo .large-container nav ul li a {
+    flex-direction: row;
+    color: var(--branco);
+  }
+
+  .topo .large-container .botao-menu {
+    display: none;
+  }
+}
