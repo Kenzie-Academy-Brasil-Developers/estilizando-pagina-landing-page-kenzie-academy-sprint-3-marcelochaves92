@@ -471,9 +471,7 @@ li img {
   .topo .large-container .botao-menu {
       display:none;
   }
-  #title{
-    font-size: 63px;
-  }
+  
   .secaoDestaque .secaoDestaqueFormulario input {
     border: 0;
     border-top-left-radius: 4px;
