@@ -190,9 +190,13 @@ nav li {
   border-radius: 4px;
   padding: 5px;
   width: 50%;
-  background-color: var(--branco);
   margin-top: 20px;
   margin-bottom: 20px;
+  transition-duration: 0.4s;
+}
+
+.secaoSobre .flex-col button:hover{
+  background-color: var(--branco);
 }
 
 .flex-col span {
@@ -439,6 +443,28 @@ li img {
 }
 
 @media screen and (min-width: 1080px) {
+
+  .topo .large-container nav {
+      display: inline-block;
+  }
+ 
+  .topo .large-container nav ul li a{
+    flex-direction: row;
+    color: var(--branco);
+    text-decoration: none;
+}
+
+  .topo .large-container .botao-menu {
+      display:none;
+  }
+
+  .inicial .secaoSobre .flex-col p{
+    width: 448px;
+  }
+  .secaoSobre .flex-col button{
+    width: 30%;
+  }
+
   .secaoCursos {
     margin-top: 80px;
     color: var(--cinza);
@@ -506,21 +532,3 @@ li img {
     margin-bottom: 50px;
   }
 }
-
-@media only screen and (min-width: 720px) {
-    .topo .large-container nav {
-        display: flex;
-        flex-direction: row;
-        justify-items: space-between;
-    }
-   
-    .topo .large-container nav ul li a{
-      flex-direction: row;
-      color: var(--branco);
-  }
-
-    .topo .large-container .botao-menu {
-        display:none;
-    }
-
- }  
